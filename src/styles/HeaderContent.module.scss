@@ -59,6 +59,43 @@
 
 /* Responsive */
 
+@media screen and (max-width: 400px) {
+    .home {
+        flex-direction: column;
+
+        .bg_home {
+            left: 5%;
+        }
+
+        .text_home {
+            margin: 0 auto;
+            padding-bottom: 80px;
+
+            .h1_home {
+                font-size: 1.8rem;
+            }
+
+            .subtitle_home {
+                width: 190px;
+                align-items: center;
+                margin-right: 40px;
+                font-size: 13px;
+            }
+
+            .button {
+                button {
+                    padding: 25px 30px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .img_home {
+            display: none;
+        }
+    }
+}
+
 @media screen and (max-width: 800px) {
     .home {
         flex-direction: column;

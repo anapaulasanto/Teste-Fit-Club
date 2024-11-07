@@ -3,9 +3,10 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    font-size: 30px;
+    font-size: 38px;
     display: none;
     color: rgb(101, 101, 101);
+    z-index: 1;
 
     &:hover {
         cursor: pointer;

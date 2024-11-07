@@ -76,6 +76,7 @@
 @media screen and (max-width: 500px) {
     .information_section {
         .img_info_section {
+
             .img_info1 {
                 margin: 0 auto;
                 max-width: 300px;
@@ -83,7 +84,16 @@
         }
 
         .img_info2 {
-            max-width: 200px;
+            max-width: 180px;
+        }
+
+        .text_info_section {
+            .button {
+                    button {
+                        padding: 20px 30px;
+                        font-size: 15px;
+                    }
+                }
         }
     }
 }

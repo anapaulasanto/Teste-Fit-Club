@@ -1,0 +1,14 @@
+.btn_back {
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    display: none;
+    color: rgb(101, 101, 101);
+
+    &:hover {
+        cursor: pointer;
+        background-color: transparent;
+    }
+}

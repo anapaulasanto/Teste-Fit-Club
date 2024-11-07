@@ -1,0 +1,142 @@
+.cards_section {
+    .title_section_card {
+        padding: 60px 0 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 70vw;
+        margin: 0 auto;
+
+        .text_side {
+            color: var(--text-color);
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .arrow_side {
+
+            button {
+                background-color: transparent;
+                font-size: 30px;
+
+                &:hover {
+                    color: var(--button-color);
+                    cursor: pointer;
+                    transition: 0.4s ease;
+                }
+
+                .btn_arrow {
+                    .arrow_title {
+
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        padding-bottom: 120px;
+        max-width: 50vw;
+        margin: 0 auto;
+
+        .card {
+            background-color: var(--primary-color);
+            padding: 9px 8px;
+            border-radius: 6px;
+            height: 210px;
+
+            &:hover {
+                border: 1px solid var(--button-color);
+                transition: 0.2s;
+            }
+
+            .card_icon {
+                background-color: var(--text-paragraph-color);
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 28px;
+                margin-bottom: 8px;
+            }
+
+            h1 {
+                font-size: 15px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-size: 13px;
+                color: var(--text-color);
+                width: 200px;
+            }
+
+            .link_card {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin: 5px 0;
+
+                p {
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin: 5px 0;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: var(--button-color);
+                        transition: 0.3s;
+                    }
+
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    color: var(--button-color);
+                    transition: 0.3s;
+                }
+
+                .arrow_card {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+/* Resposive */
+@media screen and (max-width: 990px) {
+    .cards_section {
+        .cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .cards_section {
+        .text_side {
+                text-align: center;
+                margin: 0 auto;    
+        }
+
+        .title_section_card{
+            .arrow_side {
+                display: none;
+            }
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}

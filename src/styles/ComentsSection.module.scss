@@ -1,0 +1,143 @@
+.coments_section {
+    display: flex;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    margin-bottom: 80px;
+
+
+    .coments {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+
+        .title {
+            font-size: .5rem;
+            margin-left: 50px;
+        }
+
+        .subtitle {
+            display: flex;
+            gap: 30px;
+
+            .aspas {
+                align-self: flex-start;
+                span {
+                    color: var(--button-color);
+                    font-size: 80px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+            }
+
+            .span_subtitle {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                h4 {
+                    font-size: 11px;
+                    font-weight: 100;
+                    width: 550px;
+                    color: var(--text-color);
+                }
+
+            }
+
+        }
+
+        .icons {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 30px;
+
+            .icon {
+                color: var(--button-color);
+            }
+
+        }
+
+        .users {
+            display: flex;
+            align-items: center;
+            gap: 500px;
+
+            .user {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    object-fit: contain;
+                    border-radius: 50%;
+                }
+
+                .text_side {
+                    h1 {
+                        font-size: 0.9rem;
+                    }
+
+                    p {
+                        font-size: 11px;
+                        color: var(--text-color);
+                    }
+                }
+            }
+
+            .arrow_side {
+                display: flex;
+                gap: 30px;
+                color: var(--button-color);
+
+                &:hover {
+                    cursor: pointer;
+                    color: var(--text-paragraph-color);
+                }
+            }
+        }
+
+    }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 770px) {
+    .coments_section {
+        .coments {
+            .users {
+                gap: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .coments_section {
+        .coments {
+            align-items: center;
+            .title {
+                text-align: center;
+            }
+
+            .subtitle {
+                .span_subtitle {
+                    h4 {
+                        width: 300px;
+                    }
+                }
+            }
+
+            .users {
+                gap: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}

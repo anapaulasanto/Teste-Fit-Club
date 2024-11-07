@@ -1,0 +1,114 @@
+.plans_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 120px;
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .subtitle {
+        width: 480px;
+        text-align: center;
+        font-size: 13px;
+        color: var(--text-color);
+        margin-bottom: 40px;
+    }
+
+    .cards_plans {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .card {
+            background-color: var(--primary-color);
+            padding: 50px 40px;
+            width: 270px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 6px;
+
+            .title_card {
+                h1 {
+                    font-weight: 100;
+                    font-size: 0.8rem;
+                }
+            }
+
+            .subtitle_card {
+                padding-bottom: 15px;
+                border-bottom: 1px solid var(--text-button-color);
+            }
+
+            .descriptions_card {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 60px;
+                height: 70px;
+
+                .description {
+                    display: flex;
+                    align-items: center;
+                    font-size: 10px;
+                    gap: 8px;
+
+                    .icon_description {
+                        font-size: 14px;
+                        color: var(--button-color);
+                        font-weight: 800;
+                    }
+                }
+            }
+
+            .btn_card {
+                .btn_cardPlans {
+                   width: 100%;
+                   background-color: transparent;
+                   border: 1px solid var(--button-color);
+                   color: var(--button-color);
+
+                   &:hover {
+                    background-color: var(--button-color);
+                    color: var(--text-button-color);
+                   }
+                }
+            }
+            
+
+            &:hover {
+                border: 1px solid var(--button-color);
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 910px) {
+    .plans_section {
+        .cards_plans {
+            flex-direction: column;
+        }
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .plans_section {
+       margin-top: 380px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .plans_section {
+       .subtitle {
+        width: 300px;
+       }
+    }
+
+}

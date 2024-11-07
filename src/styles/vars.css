@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Variáveis de Fonte */
+    --font-poppins: 'Poppins';
+
+    /* Variáveis de Cor */
+    --primary-color: #171717;
+    --secondary-color: #212121;
+    --terceary-color: #35373b;
+    --button-color: #f9ac54;
+    --text-paragraph-color: #d79447;
+    --text-color: #d1d5db;
+    --text-button-color: #ffffff;
+}

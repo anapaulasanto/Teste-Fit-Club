@@ -4,7 +4,6 @@ import { FaHeartPulse } from 'react-icons/fa6';
 import Card from './Card';
 
 const CardSection = () => {
-
     return (
         <section>
             <section className={styles.cards_section}>
